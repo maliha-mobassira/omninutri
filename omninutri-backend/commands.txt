@@ -1,0 +1,9 @@
+
+
+cd "C:\Internship Project\omninutri-backend"
+.\venv\Scripts\activate
+python -m uvicorn app.main:app --reload
+
+
+cd "C:\Internship Project\omninutri-backend\omninutri-web"
+npm run dev
