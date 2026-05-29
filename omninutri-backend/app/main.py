@@ -1,6 +1,5 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.routes.chat import router as chat_router
 
 app = FastAPI(title="OmniNutri Backend", version="0.1.0")
 
@@ -15,12 +14,14 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.include_router(chat_router)
+# ❌ TEMP DISABLED (this is crashing your deploy)
+# from app.routes.chat import router as chat_router
+# app.include_router(chat_router)
 
 @app.get("/")
 def root():
-    return {"name": "OmniNutri Backend", "docs": "/docs", "health": "/health"}
+    return {"status": "working"}
 
 @app.get("/health")
 def health():
-    return {"status": "ok"}
+    return {"ok": True}
