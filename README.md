@@ -5,7 +5,7 @@ A personalized nutrition tracker with an AI assistant, built for South Asian foo
 ---
 
 ## 🌐 Live Preview
-👉 *[your-deployment-link-here](https://omninutrihealth.netlify.app/)*
+👉 *[OmniNutri – AI Nutrition & Lifestyle Tracker](https://omninutrihealth.netlify.app/)*
 
 ---
 
